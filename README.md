@@ -1,2 +1,2 @@
 # ddem.ca
-Direct Democracy app
+What is in this repo? The Terraform backend for ddem.ca.
