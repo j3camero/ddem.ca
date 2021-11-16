@@ -31,3 +31,4 @@ override.tf.json
 node_modules
 openapi.json
 .npmrc
+npmrc

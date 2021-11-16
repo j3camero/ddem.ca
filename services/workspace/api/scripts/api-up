@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+api_name_var="\$API_"$1"_NAME"
+api_name=`eval echo $api_name_var`
+api_port_var="\$API_"$1"_PORT"
+api_port=`eval echo $api_port_var`
+api_folder="../api-$(tr [A-Z] [a-z] <<< "$1")"
+script_folder=`eval pwd`
+echo "PORT "$api_port
+cp ~/.npmrc $api_folder/server/
+swagger-cli bundle -o $api_folder/server/openapi.json -t json -r $api_folder/spec/_index.yml
+cp $api_folder/server/openapi.json $api_folder/client/openapi.json
+cd $api_folder/server && npm install && cd $script_folder
+docker build -t $api_name -f api/Dockerfile --build-arg API_PORT=$api_port $api_folder/server
+docker run -p $api_port:$api_port --env-file=config.env --name=$api_name --network=${DB_NETWORK} -d $api_name
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker build -t ${DB_NAME} -f database/Dockerfile ../
+docker network create ${DB_NETWORK}
+docker run -p ${DB_PORT}:${DB_PORT} --env-file=config.env --name=${DB_NAME} --network=${DB_NETWORK} --user=${DB_DEFAULT_USER} -e POSTGRES_PASSWORD=${DB_DEFAULT_PASSWORD} -d ${DB_NAME}

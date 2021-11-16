@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+api_name_var="\$API_"$1"_NAME"
+api_name=`eval echo $api_name_var`
+
+docker stop $api_name
+docker rm $api_name

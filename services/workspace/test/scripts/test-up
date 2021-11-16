@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+test_folder="../test"
+script_folder=`eval pwd`
+cp ~/.npmrc $test_folder/
+cd $test_folder && npm install && cd $script_folder
+docker build -t tests -f test/Dockerfile $test_folder
+docker run --env-file=config.env --name=tests --network=${DB_NETWORK} -d tests
+

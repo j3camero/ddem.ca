@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker stop ${DB_NAME}
+docker rm ${DB_NAME}
+docker network rm ${DB_NETWORK}
