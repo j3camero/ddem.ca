@@ -1,0 +1,5 @@
+name: ballot_id
+in: path
+required: true
+schema:
+  $ref: '../schemas/ballot/properties/ballot_id.yml'

@@ -1,0 +1,30 @@
+description: Proposal - Read      
+type: object
+required:
+- proposal_id
+- democracy_id
+- proposal_name
+- proposal_description
+- proposal_target
+- proposal_changes
+- date_created
+- date_updated
+properties:
+  proposal_id:
+    $ref: './properties/proposal_id.yml'
+  democracy_id:
+    $ref: './properties/democracy_id.yml'
+  proposal_name: 
+    $ref: './properties/proposal_name.yml'
+  proposal_description:
+    $ref: './properties/proposal_description.yml'
+  proposal_target:
+    $ref: './properties/proposal_target.yml'
+  proposal_changes:
+    $ref: './properties/proposal_changes.yml'
+  proposal_votes:
+    $ref: './properties/proposal_votes.yml'
+  date_created:
+    $ref: './properties/date_created.yml'
+  date_updated:
+    $ref: './properties/date_updated.yml'

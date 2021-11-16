@@ -1,0 +1,15 @@
+description: Delete a ballot
+operationId: ballot_delete
+parameters:
+  - $ref: '../../parameters/ballot_id.yml'
+  - $ref: '../../parameters/proposal_id.yml'
+responses:
+  '204':
+    $ref: '../../responses/ballot/delete.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

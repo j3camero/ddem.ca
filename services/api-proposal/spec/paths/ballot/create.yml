@@ -1,0 +1,16 @@
+description: Create a ballot
+operationId: ballot_create
+parameters:
+  - $ref: '../../parameters/proposal_id.yml'
+requestBody:
+  $ref: '../../requests/ballot/create.yml'
+responses:
+  '201':
+    $ref: '../../responses/ballot/create.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

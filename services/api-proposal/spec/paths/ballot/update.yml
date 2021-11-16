@@ -1,0 +1,17 @@
+description: Edit a ballot
+operationId: ballot_update
+parameters:
+  - $ref: '../../parameters/ballot_id.yml'
+  - $ref: '../../parameters/proposal_id.yml'
+requestBody:
+  $ref: '../../requests/ballot/update.yml'
+responses:
+  '200':
+    $ref: '../../responses/ballot/update.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

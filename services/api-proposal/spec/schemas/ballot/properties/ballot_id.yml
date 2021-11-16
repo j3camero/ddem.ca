@@ -1,0 +1,3 @@
+description: Ballot ID
+type: string
+format: uuid

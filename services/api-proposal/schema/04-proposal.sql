@@ -1,0 +1,11 @@
+CREATE TABLE proposal( LIKE base INCLUDING ALL );
+
+ALTER TABLE proposal ADD COLUMN democracy_id UUID;
+ALTER TABLE proposal ADD COLUMN name VARCHAR;
+ALTER TABLE proposal ADD COLUMN description VARCHAR;
+ALTER TABLE proposal ADD COLUMN target VARCHAR;
+ALTER TABLE proposal ADD COLUMN changes JSONB;
+
+CREATE TRIGGER proposal_update BEFORE UPDATE ON proposal FOR EACH ROW EXECUTE PROCEDURE date_updated();
+CREATE TRIGGER proposal_delete BEFORE DELETE ON proposal FOR EACH ROW EXECUTE PROCEDURE date_deleted();
+

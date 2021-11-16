@@ -1,0 +1,9 @@
+type: array
+#items:
+#  enum:
+#    - approval_percent_minimum
+#    - approval_number_minimum
+#    - disapproval_percent_maximum
+#    - disapproval_number_maximum
+#    - proposal_lifetime_minimum
+#    - proposal_lifetime_maximum

@@ -1,0 +1,14 @@
+description: Get a proposal
+operationId: proposal_read
+parameters:
+  - $ref: '../../parameters/proposal_id.yml'
+responses:
+  '200':
+    $ref: '../../responses/proposal/read.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

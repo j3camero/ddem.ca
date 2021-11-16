@@ -1,0 +1,7 @@
+name: order
+in: query
+schema:
+  type: string
+  enum:
+  - "ASC"
+  - "DESC"

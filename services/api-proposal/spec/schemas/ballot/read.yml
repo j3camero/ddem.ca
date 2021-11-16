@@ -1,0 +1,22 @@
+description: Ballot - Read      
+type: object
+required:
+- ballot_id
+- proposal_id
+- is_approved
+- ballot_comments
+- date_created
+- date_updated
+properties:
+  ballot_id:
+    $ref: './properties/ballot_id.yml'
+  proposal_id:
+    $ref: './properties/proposal_id.yml'
+  is_approved:
+    $ref: './properties/is_approved.yml'
+  ballot_comments:
+    $ref: './properties/ballot_comments.yml'
+  date_created:
+    $ref: './properties/date_created.yml'
+  date_updated:
+    $ref: './properties/date_updated.yml'

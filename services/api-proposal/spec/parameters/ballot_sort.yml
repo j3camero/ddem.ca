@@ -1,0 +1,7 @@
+name: sort
+in: query
+schema:
+  type: string
+  enum:
+  - "date_created"
+  - "date_updated"

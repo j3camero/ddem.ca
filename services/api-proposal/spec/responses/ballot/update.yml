@@ -1,0 +1,6 @@
+description: Successfully updated a ballot
+content:
+  application/json:
+    schema:
+      $ref: '../../schemas/ballot/read.yml'
+
