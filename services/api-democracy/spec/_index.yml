@@ -1,0 +1,9 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Democracy API
+  description: API to manage democracies
+servers:
+  - url: http://api-democracy:3000/v1
+paths:
+  $ref: './paths/_index.yml'

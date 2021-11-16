@@ -1,0 +1,28 @@
+{
+  "name": "@AluminumOxide/direct-democracy-api-democracy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ajv": "^8.6.2",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.20.1",
+    "fastify-openapi-glue": "^2.6.2",
+    "fastify-postgres": "^3.6.0",
+    "fastify-swagger": "^4.8.4",
+    "@AluminumOxide/direct-democracy-api-proposal-client": "1.0.7",
+    "@AluminumOxide/direct-democracy-tools-api-db": "1.0.0",
+    "@AluminumOxide/direct-democracy-tools-api-reply": "1.0.0",
+    "@AluminumOxide/direct-democracy-tools-api-request": "1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "node index.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/AluminumOxide/direct-democracy-api-democracy",
+  "author": "",
+  "license": "ISC"
+}

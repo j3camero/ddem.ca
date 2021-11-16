@@ -1,0 +1,28 @@
+description: Democracy - Read      
+type: object
+required:
+- democracy_id
+- democracy_name
+- democracy_description
+- democracy_population
+- democracy_rules
+- democracy_metas
+- date_created
+- date_updated
+properties:
+  democracy_id:
+    $ref: './properties/democracy_id.yml'
+  democracy_name: 
+    $ref: './properties/democracy_name.yml'
+  democracy_description:
+    $ref: './properties/democracy_description.yml'
+  democracy_population:
+    $ref: './properties/democracy_population.yml'
+  democracy_rules:
+    $ref: './properties/democracy_rules.yml'
+  democracy_metas:
+    $ref: './properties/democracy_metas.yml'
+  date_created:
+    $ref: './properties/date_created.yml'
+  date_updated:
+    $ref: './properties/date_updated.yml'

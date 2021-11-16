@@ -1,0 +1,6 @@
+description: Successfully fetched a democracy
+content:
+  application/json:
+    schema:
+      $ref: '../schemas/democracy/read.yml'
+

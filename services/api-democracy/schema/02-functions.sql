@@ -1,0 +1,18 @@
+CREATE OR REPLACE FUNCTION date_updated()
+	RETURNS TRIGGER
+AS $$
+BEGIN
+	NEW.date_updated := NOW();
+	RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION date_deleted()
+	RETURNS TRIGGER
+AS $$
+BEGIN
+	EXECUTE format('UPDATE %I SET date_deleted = NOW() WHERE id = $1', TG_TABLE_NAME) USING OLD.id;
+	RETURN NULL;
+END;
+$$ LANGUAGE plpgsql;

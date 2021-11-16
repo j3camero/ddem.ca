@@ -1,0 +1,15 @@
+description: Apply a proposal
+operationId: apply_proposal
+parameters:
+  - $ref: '../../parameters/democracy_id.yml'
+  - $ref: '../../parameters/proposal_id.yml'
+responses:
+  '200':
+    description: ok
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

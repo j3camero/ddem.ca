@@ -1,0 +1,17 @@
+description: List democracies
+operationId: democracy_list
+parameters:
+  - $ref: '../../parameters/limit.yml'
+  - $ref: '../../parameters/last.yml'
+  - $ref: '../../parameters/democracy_sort.yml'
+  - $ref: '../../parameters/order.yml'
+responses:
+  '200':
+    $ref: '../../responses/list.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+
