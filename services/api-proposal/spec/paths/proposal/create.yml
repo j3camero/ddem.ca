@@ -1,0 +1,14 @@
+description: Create a proposal
+operationId: proposal_create
+requestBody:
+  $ref: '../../requests/proposal/create.yml'
+responses:
+  '201':
+    $ref: '../../responses/proposal/create.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

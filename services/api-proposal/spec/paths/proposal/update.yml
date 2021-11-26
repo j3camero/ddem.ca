@@ -1,0 +1,16 @@
+description: Edit a proposal
+operationId: proposal_update
+parameters:
+  - $ref: '../../parameters/proposal_id.yml'
+requestBody:
+  $ref: '../../requests/proposal/update.yml'
+responses:
+  '200':
+    $ref: '../../responses/proposal/update.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

@@ -1,0 +1,8 @@
+description: Successfully return list of proposals
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: '../../schemas/proposal/read.yml'
+

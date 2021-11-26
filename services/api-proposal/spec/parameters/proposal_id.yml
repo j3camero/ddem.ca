@@ -1,0 +1,5 @@
+name: proposal_id
+in: path
+required: true
+schema:
+  $ref: '../schemas/proposal/properties/proposal_id.yml'

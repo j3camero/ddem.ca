@@ -1,0 +1,9 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Proposal API
+  description: API to manage proposals
+servers:
+  - url: http://api-proposal:3001/v1
+paths:
+  $ref: './paths/_index.yml'

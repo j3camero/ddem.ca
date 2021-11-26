@@ -1,0 +1,24 @@
+  /proposal:
+    get:
+        $ref: './proposal/list.yml'
+    post:
+        $ref: './proposal/create.yml'
+  /proposal/{proposal_id}:
+    get:
+        $ref: './proposal/read.yml'
+    post:
+        $ref: './proposal/update.yml'
+    delete:
+        $ref: './proposal/delete.yml'
+  /proposal/{proposal_id}/ballot:
+    get:
+        $ref: './ballot/list.yml'
+    post:
+        $ref: './ballot/create.yml'
+  /proposal/{proposal_id}/ballot/{ballot_id}:
+    get:
+        $ref: './ballot/read.yml'
+    post:
+        $ref: './ballot/update.yml'
+    delete:
+        $ref: './ballot/delete.yml'

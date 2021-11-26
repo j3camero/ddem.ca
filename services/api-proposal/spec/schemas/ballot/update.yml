@@ -1,0 +1,9 @@
+description: Ballot - Update
+type: object
+required:
+  - is_approved
+properties:
+  is_approved: 
+    $ref: './properties/is_approved.yml'
+  ballot_comments:
+    $ref: './properties/ballot_comments.yml'

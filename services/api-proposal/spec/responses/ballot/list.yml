@@ -1,0 +1,8 @@
+description: Successfully return list of ballots
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: '../../schemas/ballot/read.yml'
+

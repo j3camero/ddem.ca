@@ -1,0 +1,7 @@
+description: Proposal votes
+type: object
+properties:
+        yes:
+                type: integer
+        no:
+                type: integer

@@ -1,0 +1,6 @@
+description: Successfully fetched a proposal
+content:
+  application/json:
+    schema:
+      $ref: '../../schemas/proposal/read.yml'
+

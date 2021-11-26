@@ -1,0 +1,18 @@
+description: List ballots
+operationId: ballot_list
+parameters:
+  - $ref: '../../parameters/limit.yml'
+  - $ref: '../../parameters/last.yml'
+  - $ref: '../../parameters/ballot_sort.yml'
+  - $ref: '../../parameters/order.yml'
+  - $ref: '../../parameters/proposal_id.yml'
+responses:
+  '200':
+    $ref: '../../responses/ballot/list.yml'
+  '400':
+    $ref: '../../responses/400.yml'
+  '401':
+    $ref: '../../responses/401.yml'
+  '500':
+    $ref: '../../responses/500.yml'
+

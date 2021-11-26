@@ -1,0 +1,15 @@
+type: object
+additionalProperties: true
+#properties:
+#  approval_percent_minimum:
+#    type: integer
+#  approval_number_minimum:
+#    type: integer
+#  disapproval_percent_maximum:
+#    type: integer
+#  disapproval_number_maximum:
+#    type: integer
+#  proposal_lifetime_minimum:
+#    type: integer
+#  proposal_lifetime_maximum:
+#    type: integer

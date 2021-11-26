@@ -1,0 +1,9 @@
+description: Proposal changes
+type: object
+properties: 
+  add:
+    $ref: './proposal_rules_object.yml'
+  update:
+    $ref: './proposal_rules_object.yml'
+  delete:
+    $ref: './proposal_rules_array.yml'
