@@ -1,0 +1,9 @@
+  /democracy:
+    get:
+        $ref: './democracy/list.yml'
+  /democracy/{democracy_id}:
+    get:
+        $ref: './democracy/read.yml'
+  /democracy/{democracy_id}/proposal/{proposal_id}:
+    get:
+      $ref: './democracy/apply.yml'

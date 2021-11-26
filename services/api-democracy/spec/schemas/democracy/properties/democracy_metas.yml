@@ -1,0 +1,25 @@
+description: Democracy meta rules
+type: object
+properties:
+  rules:
+    description: Meta rules for modifying democracy rules
+    type: object
+    additionalProperties: true
+#    properties:
+#      add:
+#        $ref: './meta_rules.yml'
+#      update:
+#        $ref: './meta_rules.yml'
+#      delete:
+#        $ref: './meta_rules.yml'
+  metas:
+    description: Meta rules for modifying democracy meta rules
+    type: object
+    additionalProperties: true
+#    properties:
+#      add:
+#        $ref: './meta_rules.yml'
+#      update:
+#        $ref: './meta_rules.yml'
+#      delete:
+#        $ref: './meta_rules.yml'

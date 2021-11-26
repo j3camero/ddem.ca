@@ -1,0 +1,5 @@
+name: democracy_id
+in: path
+required: true
+schema:
+  $ref: '../schemas/democracy/properties/democracy_id.yml'

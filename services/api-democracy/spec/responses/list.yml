@@ -1,0 +1,8 @@
+description: Successfully return list of democracies
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: '../schemas/democracy/list.yml'
+
