@@ -1,0 +1,14 @@
+{
+  "name": "@j3camero/ddem-libs-api-request",
+  "version": "1.0.0",
+  "description": "Handles server requests",
+  "main": "index.js",
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/j3camero/ddem.ca",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
