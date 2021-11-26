@@ -1,0 +1,14 @@
+{
+  "name": "@j3camero/ddem-libs-api-reply",
+  "version": "1.0.0",
+  "description": "Handles server replies",
+  "main": "index.js",
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/j3camero/ddem.ca",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
