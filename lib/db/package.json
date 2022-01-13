@@ -1,6 +1,6 @@
 {
   "name": "@j3camero/ddem-libs-api-db",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "DB tools",
   "main": "index.js",
   "dependencies": {
